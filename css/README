@@ -1,9 +1,151 @@
-Папка для стилевых файлов.
+:root {
+    basic-black; #000000;
+    basic-white; #FFFFFF;
+    basic-extra-black: #EEEEEE;
+    neutral: #444444;
+    special: #283136;
+}
 
---
+.element {
+    background-color: #EEEEEE;
+    background-color-red: #FB565A;
+    background-color-green:#00CA74;
+    background-color-yellow: #EFC849;
+}
 
-Пример структуры файлов:
+body {
+    min-width: 1157px
+    margin: 0px;
+    padding: 0px;
+    font-family: "Robot",Areal,sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    color: basic-white;
+    text-transform: normal;
+    background-color: basic-white;
+    ackground-image: url("../img/bg.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
 
-css/
-| - style.css
-| - [другие *.css файлы]
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+    background-color: #EEEEEE;
+    weight: 500;
+}
+
+.site-navigation {
+  list-style: none;
+  background-color: #EEEEEE;
+}
+
+.site-navigation a,
+.user-navigation a {
+    color: #000000;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+ color: #FB565A
+}
+
+.site-navigation a:focus,
+.user-navigation a:focus {
+ color: #000000;
+ opacity: 0.3;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-item {
+    text-align: center;
+}
+
+.services-item h3{
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.index-columns {
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136
+  background: url(nerds-illustration.png);
+}
+.index-columns h2 {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+}
+
+.index-columns h3 {
+   text-transform: uppercase; 
+}
+
+.statistics {
+    font-size: 45px;
+    line-height: 64px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.partners {
+    text-align: center;
+    opacity: 0.2;
+    background: url(logo-2.png);
+    background: url(logo-3.png);
+    background: url(logo-4.png);
+    list-style: none;
+}
+
+.contacts {
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666;
+}
+
+.name {
+    color: #000000;
+}
+
+.contacts button {
+    background-color: #FB565A;
+    color: #FFFFFF;
+    border-radius: 3px;
+    
+}
+
+.social-button a:hover {
+    background: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
+}
+
+.social-button a:focus {
+    background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.important {
+    font-size: 36px;
+    line-height: 36px;
+    align-items: center;
+}
+
+.text p {
+    font-size: 16px;
+    line-height: 22px;       
+    align-items: center;
+    color: #444444;
+}
